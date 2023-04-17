@@ -41,9 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    data = Provider.of<DataProvider>(context, listen: false).loadData(
-
-    );
+    data = Provider.of<DataProvider>(context, listen: false).loadData();
   }
 
   Future<void> _exportData() async {

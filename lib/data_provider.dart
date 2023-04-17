@@ -66,7 +66,20 @@ class DataProvider extends ChangeNotifier {
           sectorName: 'IT',
           jobFunctionName: 'Development',
           notes: 'Enthusiastic about new technologies'),
+
       // Add more sample data if needed
+      MyModel(
+          leadId: 2,
+          firstName: 'Tamoor',
+          lastName: 'Munawar',
+          email: 'alice.smith@example.com',
+          eventName: 'Tech Conference',
+          jobTitle: 'Software Engineer',
+          company: 'Tech Corp',
+          profile: 'Experienced developer',
+          sectorName: 'IT',
+          jobFunctionName: 'Development',
+          notes: 'Enthusiastic about new technologies'),
     ];
   }
 }
