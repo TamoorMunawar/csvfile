@@ -1,32 +1,32 @@
-class MyModel {
-  int leadId;
-  String firstName;
-  String lastName;
-  String email;
-  String eventName;
-  String jobTitle;
-  String company;
-  String profile;
-  String sectorName;
-  String jobFunctionName;
-  String notes;
+class Lead {
+  final int leadId;
+  final String? firstName;
+  final String? lastName;
+  final String? email;
+  final String? eventName;
+  final String? jobTitle;
+  final String? company;
+  final String? profile;
+  final String? sectorName;
+  final String? jobFunctionName;
+  final String? notes;
 
-  MyModel({
+  Lead({
     required this.leadId,
-    required this.firstName,
-    required this.lastName,
-    required this.email,
-    required this.eventName,
-    required this.jobTitle,
-    required this.company,
-    required this.profile,
-    required this.sectorName,
-    required this.jobFunctionName,
-    required this.notes,
+    this.firstName,
+    this.lastName,
+    this.email,
+    this.eventName,
+    this.jobTitle,
+    this.company,
+    this.profile,
+    this.sectorName,
+    this.jobFunctionName,
+    this.notes,
   });
 
-  factory MyModel.fromJson(Map<String, dynamic> json) {
-    return MyModel(
+  factory Lead.fromJson(Map<String, dynamic> json) {
+    return Lead(
       leadId: json['leadId'],
       firstName: json['firstName'],
       lastName: json['lastName'],
